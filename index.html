@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Smoking Pipe</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-orbit-controls@1.2.0/dist/aframe-orbit-controls.min.js"></script>
+</head>
+
+<body>
+
+
+    <a href="infopage.html">
+        <button class="button infobutton">About</button></a>
+
+    <div class="model-title">
+        <h5 class="model-title__page">Smoking Pipe</h5>
+    </div>
+
+    <a-scene fog="type: exponential; density:0.15;">
+        <a-assets>
+            <a-asset-item id="stone-pipe" src="content/stone-pipe.gltf"></a-asset-item>
+        </a-assets>
+        <a-entity light="type: directional; color: #FFF; intensity: 0.5" position="-1 2 3"></a-entity>
+        <a-entity light="type: directional; color: #FFF; intensity: 1.0" position="0.5 1 1"></a-entity>
+        <a-entity environment="preset: default; fog:1; ground:canyon; groundColor:#000000; groundColor2:#222222; groundTexture:walkernoise; skyType:gradient; skyColor:#6b818e;"></a-entity>
+        <a-entity camera look-controls="enabled: true" orbit-controls="target: 0 1.6 -0.5; minDistance:0.5; maxDistance: 180; initialPosition: 0 1.5 3"></a-entity>
+
+        <a-entity position="0 1.5 0" gltf-model="#stone-pipe" scale="2 2 2"></a-entity>
+    </a-scene>
+    <script src="https://rawgit.com/feiss/aframe-environment-component/master/dist/aframe-environment-component.min.js"></script>
+</body>
+
+</html>

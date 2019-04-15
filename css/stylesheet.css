@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    line-height: 20px;
+    font-size: 80px;
+}
+
+h2,
+h3,
+h4 {
+    line-height: 5px;
+    font-size: 25px;
+}
+
+h5 {
+    font-size: 50px;
+}
+
+
+.model-info {
+    position: absolute;
+    z-index: 50;
+    width: 30%;
+    left: 35vw;
+    top: 15vw;
+    background-color: rgb(185, 202, 222, 0.3);
+    padding: 50px;
+
+}
+
+.model-title {
+    position: absolute;
+    z-index: 50;
+    width: 30%;
+    left: 25vw;
+    top: 1vw;
+}
+
+
+.infobutton {
+    position: absolute;
+    z-index: 50;
+    background-color: rgb(185, 202, 222, 0.3);
+    color: white;
+    border: 2px solid white;
+    padding: 28px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    right: 10vw;
+    top: 46vw;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.infobutton:hover {
+    background-color: rgb(185, 202, 222);
+    color: black;
+}
